@@ -36,10 +36,10 @@
         { "key": "result", "label": "结果" }
       ],
       "matches": [
-        { "date": "2026-09-15", "mode": "烽火地带", "map": "零号大坝", "kd": "18/6/4", "dmg": "8100", "result": "win" },
-        { "date": "2026-09-14", "mode": "全面战场", "map": "溪谷", "kd": "22/11/7", "dmg": "6900", "result": "loss" },
-        { "date": "2026-09-12", "mode": "烽火地带", "map": "长弓溪谷", "kd": "15/9/2", "dmg": "5400", "result": "win" },
-        { "date": "2026-09-10", "mode": "全面战场", "map": "坠机之地", "kd": "9/14/3", "dmg": "4100", "result": "loss" }
+        { "date": "2026-09-15", "mode": "烽火地带", "map": "零号大坝", "kd": "18/6/4", "dmg": "8100", "result": "win", "details": [ { "label": "评分", "value": "S" }, { "label": "回合数", "value": "12" }, { "label": "状态", "value": "成功撤离" } ] },
+        { "date": "2026-09-14", "mode": "全面战场", "map": "溪谷", "kd": "22/11/7", "dmg": "6900", "result": "loss", "details": [ { "label": "评分", "value": "A" }, { "label": "回合数", "value": "15" }, { "label": "状态", "value": "阵亡" } ] },
+        { "date": "2026-09-12", "mode": "烽火地带", "map": "长弓溪谷", "kd": "15/9/2", "dmg": "5400", "result": "win", "details": [ { "label": "评分", "value": "S" }, { "label": "回合数", "value": "10" }, { "label": "状态", "value": "成功撤离" } ] },
+        { "date": "2026-09-10", "mode": "全面战场", "map": "坠机之地", "kd": "9/14/3", "dmg": "4100", "result": "loss", "details": [ { "label": "评分", "value": "B" }, { "label": "回合数", "value": "13" }, { "label": "状态", "value": "阵亡" } ] }
       ]
     },
     {
@@ -74,10 +74,10 @@
         { "key": "result", "label": "结果" }
       ],
       "matches": [
-        { "date": "2026-09-15", "map": "源工重镇", "agent": "捷风", "score": "13-9", "kd": "21/14/8", "acs": "312", "result": "win" },
-        { "date": "2026-09-14", "map": "裂变峡谷", "agent": "芮娜", "score": "10-13", "kd": "16/17/5", "acs": "224", "result": "loss" },
-        { "date": "2026-09-12", "map": "森寒冬港", "agent": "霓虹", "score": "13-7", "kd": "19/10/6", "acs": "298", "result": "win" },
-        { "date": "2026-09-11", "map": "深海明珠", "agent": "零", "score": "8-13", "kd": "11/15/4", "acs": "176", "result": "loss" }
+        { "date": "2026-09-15", "map": "源工重镇", "agent": "捷风", "score": "13-9", "kd": "21/14/8", "acs": "312", "result": "win", "details": [ { "label": "评分", "value": "8.5" }, { "label": "状态", "value": "MVP" }, { "label": "时长", "value": "38分钟" } ] },
+        { "date": "2026-09-14", "map": "裂变峡谷", "agent": "芮娜", "score": "10-13", "kd": "16/17/5", "acs": "224", "result": "loss", "details": [ { "label": "评分", "value": "6.2" }, { "label": "状态", "value": "落败" }, { "label": "时长", "value": "41分钟" } ] },
+        { "date": "2026-09-12", "map": "森寒冬港", "agent": "霓虹", "score": "13-7", "kd": "19/10/6", "acs": "298", "result": "win", "details": [ { "label": "评分", "value": "8.9" }, { "label": "状态", "value": "MVP" }, { "label": "时长", "value": "36分钟" } ] },
+        { "date": "2026-09-11", "map": "深海明珠", "agent": "零", "score": "8-13", "kd": "11/15/4", "acs": "176", "result": "loss", "details": [ { "label": "评分", "value": "5.4" }, { "label": "状态", "value": "落败" }, { "label": "时长", "value": "44分钟" } ] }
       ]
     },
     {
@@ -110,10 +110,10 @@
         { "key": "result", "label": "结果" }
       ],
       "matches": [
-        { "date": "2026-09-15", "hero": "镜", "lane": "打野", "kd": "12/3/8", "result": "win" },
-        { "date": "2026-09-14", "hero": "公孙离", "lane": "发育路", "kd": "9/4/11", "result": "win" },
-        { "date": "2026-09-13", "hero": "西施", "lane": "中路", "kd": "5/6/14", "result": "loss" },
-        { "date": "2026-09-12", "hero": "马超", "lane": "对抗路", "kd": "11/2/7", "result": "win" }
+        { "date": "2026-09-15", "hero": "镜", "lane": "打野", "kd": "12/3/8", "result": "win", "details": [ { "label": "评分", "value": "13.5" }, { "label": "时长", "value": "18分钟" }, { "label": "输出", "value": "28%" } ] },
+        { "date": "2026-09-14", "hero": "公孙离", "lane": "发育路", "kd": "9/4/11", "result": "win", "details": [ { "label": "评分", "value": "12.1" }, { "label": "时长", "value": "21分钟" }, { "label": "输出", "value": "31%" } ] },
+        { "date": "2026-09-13", "hero": "西施", "lane": "中路", "kd": "5/6/14", "result": "loss", "details": [ { "label": "评分", "value": "8.3" }, { "label": "时长", "value": "24分钟" }, { "label": "输出", "value": "22%" } ] },
+        { "date": "2026-09-12", "hero": "马超", "lane": "对抗路", "kd": "11/2/7", "result": "win", "details": [ { "label": "评分", "value": "14.2" }, { "label": "时长", "value": "16分钟" }, { "label": "输出", "value": "33%" } ] }
       ]
     }
   ]

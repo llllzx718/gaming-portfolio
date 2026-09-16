@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import MatchList from './MatchList';
 
 const columns = [
@@ -8,7 +8,7 @@ const columns = [
   { key: 'result', label: '结果' },
 ];
 const matches = [
-  { date: '2026-09-15', map: '源工重镇', result: 'win' },
+  { date: '2026-09-15', map: '源工重镇', result: 'win', details: [{ label: '评分', value: 'MVP' }] },
   { date: '2026-09-14', map: '裂变峡谷', result: 'loss' },
 ];
 
@@ -28,5 +28,18 @@ describe('MatchList', () => {
     render(<MatchList matches={matches} columns={columns} />);
     expect(screen.getByText('胜')).toBeInTheDocument();
     expect(screen.getByText('负')).toBeInTheDocument();
+  });
+
+  it('expands and collapses match details on click', async () => {
+    render(<MatchList matches={matches} columns={columns} />);
+    const row = screen.getAllByTestId('match-row')[0];
+    expect(screen.queryByText('评分')).not.toBeInTheDocument();
+
+    fireEvent.click(row);
+    expect(screen.getByText('评分')).toBeInTheDocument();
+    expect(screen.getByText('MVP')).toBeInTheDocument();
+
+    fireEvent.click(row);
+    await waitFor(() => expect(screen.queryByText('评分')).not.toBeInTheDocument());
   });
 });

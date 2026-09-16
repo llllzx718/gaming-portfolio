@@ -257,6 +257,7 @@ const DriftWall = ({
   return (
     <div
       ref={containerRef}
+      aria-hidden="true"
       className={rootClass}
       style={cssVars}
       onPointerMove={handlePointerMove}

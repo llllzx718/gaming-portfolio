@@ -164,7 +164,7 @@ export default function ElasticField() {
 
     function createCard(el) {
       const cfg = readCardConfig(el);
-      const N = Math.max(6, Math.min(40, cfg.resolution));
+      const N = Math.max(6, Math.min(40, Math.round(cfg.resolution)));
       const nodeCount = N * N;
       const aGrid = new Float32Array(nodeCount * 2);
       const uv = new Float32Array(nodeCount * 2);
@@ -248,6 +248,7 @@ export default function ElasticField() {
 
     function refreshRects() {
       for (const card of cards) updateRect(card);
+      renderAll();
     }
 
     function sync() {
@@ -273,6 +274,7 @@ export default function ElasticField() {
       }
       cards.length = 0;
       cards.push(...next);
+      renderAll();
     }
 
     const mo = new MutationObserver(() => sync());
@@ -417,12 +419,32 @@ export default function ElasticField() {
       renderer.render({ scene: card.mesh });
     }
 
+    function renderAll() {
+      gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+      for (const card of cards) renderCard(card);
+    }
+
+    function anyActivity() {
+      for (const card of cards) {
+        if (card.pointer.active) return true;
+        for (let k = 0; k < card.nodeCount; k++) {
+          const o3 = k * 3;
+          if (Math.abs(card.pos[o3]) > 0.001 || Math.abs(card.pos[o3 + 1]) > 0.001 || Math.abs(card.pos[o3 + 2]) > 0.001) return true;
+          if (Math.abs(card.vel[o3]) > 0.0005 || Math.abs(card.vel[o3 + 1]) > 0.0005 || Math.abs(card.vel[o3 + 2]) > 0.0005) return true;
+        }
+      }
+      return false;
+    }
+
     let raf = 0;
     function frame(now) {
       raf = requestAnimationFrame(frame);
+      if (reduceMotion) return; // static frame already rendered via sync()/refreshRects()
       let dt = (now - last) / 1000;
       last = now;
       if (dt > 0.25) dt = 0.25;
+      if (!anyActivity()) return; // idle: skip physics + render this frame
       accTime += dt;
       let sub = 0;
       while (accTime >= STEP && sub < MAX_SUB) {
@@ -432,10 +454,7 @@ export default function ElasticField() {
       }
       if (accTime > STEP) accTime = 0;
       for (const card of cards) commitCard(card);
-
-      gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
-      gl.clear(gl.COLOR_BUFFER_BIT);
-      for (const card of cards) renderCard(card);
+      renderAll();
     }
     raf = requestAnimationFrame(frame);
 

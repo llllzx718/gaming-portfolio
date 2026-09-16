@@ -1,3 +1,4 @@
+import { ArrowDown, ArrowUp } from 'lucide-react';
 import { getIcon } from '../lib/icons';
 
 export default function KpiCard({ kpi }) {
@@ -18,7 +19,16 @@ export default function KpiCard({ kpi }) {
           {kpi.label}
         </span>
         <span className="text-2xl font-semibold text-slate-100">{kpi.value}</span>
-        {kpi.delta && <span className="text-xs text-cyan-300/80">{kpi.delta}</span>}
+        {kpi.delta && (
+          <span className="flex items-center gap-1 text-xs text-cyan-300/80">
+            {String(kpi.delta).trim().startsWith('-') ? (
+              <ArrowDown className="h-3 w-3" />
+            ) : (
+              <ArrowUp className="h-3 w-3" />
+            )}
+            {kpi.delta}
+          </span>
+        )}
       </div>
     </div>
   );
