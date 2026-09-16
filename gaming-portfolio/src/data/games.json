@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "我的电竞战绩",
+    "subtitle": "Delta Force · Valorant · 王者荣耀",
+    "accent": "#22d3ee"
+  },
+  "games": [
+    {
+      "id": "delta-force",
+      "name": "三角洲行动",
+      "tagline": "战术射击 · 撤离",
+      "accent": "#38bdf8",
+      "icon": "target",
+      "cover": "https://picsum.photos/seed/delta-cover/1200/800",
+      "highlights": [
+        "https://picsum.photos/seed/delta-1/600/400",
+        "https://picsum.photos/seed/delta-2/600/400",
+        "https://picsum.photos/seed/delta-3/600/400",
+        "https://picsum.photos/seed/delta-4/600/400",
+        "https://picsum.photos/seed/delta-5/600/400",
+        "https://picsum.photos/seed/delta-6/600/400"
+      ],
+      "kpis": [
+        { "label": "段位", "value": "将军", "icon": "crown" },
+        { "label": "胜率", "value": "58.3%", "icon": "percent", "delta": "+2.1%" },
+        { "label": "K/D", "value": "1.86", "icon": "target" },
+        { "label": "场均伤害", "value": "6120", "icon": "zap" },
+        { "label": "撤离成功率", "value": "71%", "icon": "shield" }
+      ],
+      "matchColumns": [
+        { "key": "date", "label": "日期" },
+        { "key": "mode", "label": "模式" },
+        { "key": "map", "label": "地图" },
+        { "key": "kd", "label": "K/D/A" },
+        { "key": "dmg", "label": "伤害" },
+        { "key": "result", "label": "结果" }
+      ],
+      "matches": [
+        { "date": "2026-09-15", "mode": "烽火地带", "map": "零号大坝", "kd": "18/6/4", "dmg": "8100", "result": "win" },
+        { "date": "2026-09-14", "mode": "全面战场", "map": "溪谷", "kd": "22/11/7", "dmg": "6900", "result": "loss" },
+        { "date": "2026-09-12", "mode": "烽火地带", "map": "长弓溪谷", "kd": "15/9/2", "dmg": "5400", "result": "win" },
+        { "date": "2026-09-10", "mode": "全面战场", "map": "坠机之地", "kd": "9/14/3", "dmg": "4100", "result": "loss" }
+      ]
+    },
+    {
+      "id": "valorant",
+      "name": "无畏契约",
+      "tagline": "FPS · 战术射击",
+      "accent": "#ff4655",
+      "icon": "crosshair",
+      "cover": "https://picsum.photos/seed/valorant-cover/1200/800",
+      "highlights": [
+        "https://picsum.photos/seed/v-1/600/400",
+        "https://picsum.photos/seed/v-2/600/400",
+        "https://picsum.photos/seed/v-3/600/400",
+        "https://picsum.photos/seed/v-4/600/400",
+        "https://picsum.photos/seed/v-5/600/400",
+        "https://picsum.photos/seed/v-6/600/400"
+      ],
+      "kpis": [
+        { "label": "段位", "value": "钻石 1", "icon": "trophy" },
+        { "label": "胜率", "value": "54.2%", "icon": "percent", "delta": "+1.8%" },
+        { "label": "KDA", "value": "1.42", "icon": "target" },
+        { "label": "ACS", "value": "238", "icon": "zap" },
+        { "label": "爆头率", "value": "27%", "icon": "crosshair" }
+      ],
+      "matchColumns": [
+        { "key": "date", "label": "日期" },
+        { "key": "map", "label": "地图" },
+        { "key": "agent", "label": "英雄" },
+        { "key": "score", "label": "比分" },
+        { "key": "kd", "label": "K/D/A" },
+        { "key": "acs", "label": "ACS" },
+        { "key": "result", "label": "结果" }
+      ],
+      "matches": [
+        { "date": "2026-09-15", "map": "源工重镇", "agent": "捷风", "score": "13-9", "kd": "21/14/8", "acs": "312", "result": "win" },
+        { "date": "2026-09-14", "map": "裂变峡谷", "agent": "芮娜", "score": "10-13", "kd": "16/17/5", "acs": "224", "result": "loss" },
+        { "date": "2026-09-12", "map": "森寒冬港", "agent": "霓虹", "score": "13-7", "kd": "19/10/6", "acs": "298", "result": "win" },
+        { "date": "2026-09-11", "map": "深海明珠", "agent": "零", "score": "8-13", "kd": "11/15/4", "acs": "176", "result": "loss" }
+      ]
+    },
+    {
+      "id": "hok",
+      "name": "王者荣耀",
+      "tagline": "MOBA · 5v5",
+      "accent": "#6366f1",
+      "icon": "sword",
+      "cover": "https://picsum.photos/seed/hok-cover/1200/800",
+      "highlights": [
+        "https://picsum.photos/seed/hok-1/600/400",
+        "https://picsum.photos/seed/hok-2/600/400",
+        "https://picsum.photos/seed/hok-3/600/400",
+        "https://picsum.photos/seed/hok-4/600/400",
+        "https://picsum.photos/seed/hok-5/600/400",
+        "https://picsum.photos/seed/hok-6/600/400"
+      ],
+      "kpis": [
+        { "label": "段位", "value": "王者 32星", "icon": "trophy" },
+        { "label": "巅峰分", "value": "1850", "icon": "star" },
+        { "label": "胜率", "value": "61.5%", "icon": "percent", "delta": "+3.2%" },
+        { "label": "KDA", "value": "4.8", "icon": "target" },
+        { "label": "场次", "value": "842", "icon": "activity" }
+      ],
+      "matchColumns": [
+        { "key": "date", "label": "日期" },
+        { "key": "hero", "label": "英雄" },
+        { "key": "lane", "label": "位置" },
+        { "key": "kd", "label": "K/D/A" },
+        { "key": "result", "label": "结果" }
+      ],
+      "matches": [
+        { "date": "2026-09-15", "hero": "镜", "lane": "打野", "kd": "12/3/8", "result": "win" },
+        { "date": "2026-09-14", "hero": "公孙离", "lane": "发育路", "kd": "9/4/11", "result": "win" },
+        { "date": "2026-09-13", "hero": "西施", "lane": "中路", "kd": "5/6/14", "result": "loss" },
+        { "date": "2026-09-12", "hero": "马超", "lane": "对抗路", "kd": "11/2/7", "result": "win" }
+      ]
+    }
+  ]
+}
