@@ -1,16 +1,29 @@
-# React + Vite
+# 个人电竞战绩作品集
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+单页静态站：DriftWall 动态背景 + ElasticMesh 弹性卡片 + 毛玻璃对局列表。
 
-Currently, two official plugins are available:
+## 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React 19 · Vite · Tailwind CSS v4 · Framer Motion · lucide-react · ogl (WebGL)
 
-## React Compiler
+## 本地开发
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    npm install
+    npm run dev
 
-## Expanding the Oxlint configuration
+## 测试
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+    npm test
+
+## 构建
+
+    npm run build   # 产出 dist/
+    npm run preview # 本地预览产物
+
+## 数据维护
+
+所有战绩在 `src/data/games.json` 手动维护。新增游戏 = 新增一条游戏对象 + 图片，无需改代码。
+
+## 图片
+
+截图/封面放入 `public/images/{game}/`，并在 `games.json` 里引用本地路径（见 `public/images/README.md`）。
