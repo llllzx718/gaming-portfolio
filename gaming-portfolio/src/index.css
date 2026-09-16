@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #05060f;
+  --color-ink-900: #0a0c1a;
+  --color-ink-800: #10142a;
+  --color-accent: #22d3ee;
+  --color-accent-soft: #38bdf8;
+  --color-accent-2: #6366f1;
+  --color-frost: rgba(10, 14, 26, 0.55);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #05060f;
+  color: #e2e8f0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.elastic-field canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
