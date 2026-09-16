@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import DriftWall from './components/DriftWall';
 import GameTabs from './components/GameTabs';
 import HeroCard from './components/HeroCard';
+import ElasticField from './components/elastic/ElasticField';
 import KpiGrid from './components/KpiGrid';
 import MatchList from './components/MatchList';
 import { useActiveGame } from './hooks/useActiveGame';
@@ -26,6 +27,7 @@ export default function App() {
           dim={0.6}
         />
       </div>
+      <ElasticField />
       <div className="relative z-20 mx-auto max-w-5xl px-6 py-10">
         <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>

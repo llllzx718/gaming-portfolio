@@ -1,5 +1,4 @@
 import { getIcon } from '../lib/icons';
-import ElasticMesh from './elastic/ElasticMesh';
 
 export default function HeroCard({ game }) {
   const Icon = getIcon(game.icon);
@@ -15,17 +14,6 @@ export default function HeroCard({ game }) {
       data-resolution="20"
       className="relative h-64 overflow-hidden rounded-3xl"
     >
-      <div className="absolute inset-0 z-0">
-        <ElasticMesh
-          image={game.cover}
-          color1={game.accent}
-          color2="#05060f"
-          borderRadius={20}
-          tilt={10}
-          resolution={20}
-          interaction="hover"
-        />
-      </div>
       <div className="relative z-10 flex h-full flex-col justify-end p-6">
         <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs text-slate-300">
           <Icon className="h-3.5 w-3.5" />
