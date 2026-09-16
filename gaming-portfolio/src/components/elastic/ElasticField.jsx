@@ -128,7 +128,7 @@ export default function ElasticField() {
     const wrap = wrapRef.current;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const renderer = new Renderer({ alpha: true, antialias: true, dpr: Math.min(window.devicePixelRatio || 1, 2) });
+    const renderer = new Renderer({ alpha: true, antialias: true, dpr: Math.min(window.devicePixelRatio || 1, 2), autoClear: false });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
     gl.enable(gl.BLEND);
@@ -246,6 +246,10 @@ export default function ElasticField() {
       card.sy = r.height / vh;
     }
 
+    function refreshRects() {
+      for (const card of cards) updateRect(card);
+    }
+
     function sync() {
       const els = Array.from(document.querySelectorAll('[data-elastic-card]'));
       const byEl = new Map(cards.map((c) => [c.el, c]));
@@ -276,9 +280,11 @@ export default function ElasticField() {
 
     function resizeRenderer() {
       renderer.setSize(window.innerWidth, window.innerHeight);
+      refreshRects();
     }
     resizeRenderer();
     window.addEventListener('resize', resizeRenderer);
+    window.addEventListener('scroll', refreshRects, { passive: true });
     sync();
 
     function hitTest(clientX, clientY) {
@@ -437,6 +443,7 @@ export default function ElasticField() {
       cancelAnimationFrame(raf);
       mo.disconnect();
       window.removeEventListener('resize', resizeRenderer);
+      window.removeEventListener('scroll', refreshRects);
       window.removeEventListener('pointermove', onMove);
       document.removeEventListener('mouseleave', onLeave);
       for (const card of cards) card.ro?.disconnect();
