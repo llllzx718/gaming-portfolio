@@ -11,9 +11,9 @@
       "tagline": "战术射击 · 撤离",
       "accent": "#38bdf8",
       "icon": "target",
-      "cover": "/images/delta/1.webp",
+      "cover": "images/delta/1.webp",
       "highlights": [
-        "/images/delta/IMG_6744.webp"
+        "images/delta/IMG_6744.webp"
       ],
       "kpis": [
         { "label": "段位", "value": "将军", "icon": "crown" },
@@ -43,9 +43,9 @@
       "tagline": "FPS · 战术射击",
       "accent": "#ff4655",
       "icon": "crosshair",
-      "cover": "/images/valorant/IMG_6849.webp",
+      "cover": "images/valorant/IMG_6849.webp",
       "highlights": [
-        "/images/valorant/IMG_6158.webp"
+        "images/valorant/IMG_6158.webp"
       ],
       "kpis": [
         { "label": "段位", "value": "钻石 1", "icon": "trophy" },
@@ -76,11 +76,11 @@
       "tagline": "MOBA · 5v5",
       "accent": "#6366f1",
       "icon": "sword",
-      "cover": "/images/hok/IMG_4815.webp",
+      "cover": "images/hok/IMG_4815.webp",
       "highlights": [
-        "/images/hok/IMG_5887.webp",
-        "/images/hok/IMG_6793.webp",
-        "/images/hok/IMG_6846.webp"
+        "images/hok/IMG_5887.webp",
+        "images/hok/IMG_6793.webp",
+        "images/hok/IMG_6846.webp"
       ],
       "kpis": [
         { "label": "段位", "value": "王者 32星", "icon": "trophy" },

@@ -12,11 +12,11 @@ export default function HeroCard({ game }) {
       data-radius="20"
       data-tilt="10"
       data-resolution="20"
-      data-stiffness="0.15"
-      data-damping="0.35"
-      data-pull="0.85"
+      data-stiffness="0.2"
+      data-damping="0.55"
+      data-pull="1.0"
       data-grab-radius="0.55"
-      data-wobble="3"
+      data-wobble="2"
       className="relative h-64 overflow-hidden rounded-3xl"
     >
       <div className="relative z-10 flex h-full flex-col justify-end p-6">

@@ -77,7 +77,7 @@ void main() {
     vec2 w = uGridDensity / max(uRes, vec2(1.0));
     vec2 d = abs(fract(g - 0.5) - 0.5) / max(w * 1.5, vec2(1e-4));
     float line = 1.0 - smoothstep(0.0, 1.0, min(d.x, d.y));
-    lit = mix(lit, uGridColor, line * uGridOpacity * (0.6 + diff * 0.3));
+    lit = mix(lit, uGridColor, line * uGridOpacity);
   }
   vec2 p = (vUv - 0.5) * uRes;
   vec2 halfRes = uRes * 0.5;
