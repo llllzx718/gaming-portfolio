@@ -18,9 +18,9 @@ varying vec3 vNormal;
 varying float vDepth;
 void main() {
   vUv = uv;
-  vec2 half = uSize;
-  vec2 base = vec2((aGrid.x * 2.0 - 1.0) * half.x, (1.0 - aGrid.y * 2.0) * half.y);
-  vec3 p = vec3(base + aOffset.xy * half, aOffset.z * half.y);
+  vec2 halfSize = uSize;
+  vec2 base = vec2((aGrid.x * 2.0 - 1.0) * halfSize.x, (1.0 - aGrid.y * 2.0) * halfSize.y);
+  vec3 p = vec3(base + aOffset.xy * halfSize, aOffset.z * halfSize.y);
   float ct = cos(uTilt);
   float st = sin(uTilt);
   float ry = p.y * ct - p.z * st;
