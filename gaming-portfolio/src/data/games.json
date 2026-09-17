@@ -11,14 +11,9 @@
       "tagline": "战术射击 · 撤离",
       "accent": "#38bdf8",
       "icon": "target",
-      "cover": "https://picsum.photos/seed/delta-cover/1200/800",
+      "cover": "/images/delta/1.JPG",
       "highlights": [
-        "https://picsum.photos/seed/delta-1/600/400",
-        "https://picsum.photos/seed/delta-2/600/400",
-        "https://picsum.photos/seed/delta-3/600/400",
-        "https://picsum.photos/seed/delta-4/600/400",
-        "https://picsum.photos/seed/delta-5/600/400",
-        "https://picsum.photos/seed/delta-6/600/400"
+        "/images/delta/IMG_6744..JPG"
       ],
       "kpis": [
         { "label": "段位", "value": "将军", "icon": "crown" },
@@ -48,14 +43,9 @@
       "tagline": "FPS · 战术射击",
       "accent": "#ff4655",
       "icon": "crosshair",
-      "cover": "https://picsum.photos/seed/valorant-cover/1200/800",
+      "cover": "/images/valorant/IMG_6849..PNG",
       "highlights": [
-        "https://picsum.photos/seed/v-1/600/400",
-        "https://picsum.photos/seed/v-2/600/400",
-        "https://picsum.photos/seed/v-3/600/400",
-        "https://picsum.photos/seed/v-4/600/400",
-        "https://picsum.photos/seed/v-5/600/400",
-        "https://picsum.photos/seed/v-6/600/400"
+        "/images/valorant/IMG_6158..JPG"
       ],
       "kpis": [
         { "label": "段位", "value": "钻石 1", "icon": "trophy" },
@@ -86,14 +76,11 @@
       "tagline": "MOBA · 5v5",
       "accent": "#6366f1",
       "icon": "sword",
-      "cover": "https://picsum.photos/seed/hok-cover/1200/800",
+      "cover": "/images/hok/IMG_4815..JPG",
       "highlights": [
-        "https://picsum.photos/seed/hok-1/600/400",
-        "https://picsum.photos/seed/hok-2/600/400",
-        "https://picsum.photos/seed/hok-3/600/400",
-        "https://picsum.photos/seed/hok-4/600/400",
-        "https://picsum.photos/seed/hok-5/600/400",
-        "https://picsum.photos/seed/hok-6/600/400"
+        "/images/hok/IMG_5887..JPG",
+        "/images/hok/IMG_6793..JPG",
+        "/images/hok/IMG_6846..PNG"
       ],
       "kpis": [
         { "label": "段位", "value": "王者 32星", "icon": "trophy" },
